@@ -38,7 +38,7 @@ class Main:
             elif rightKey:
                 self.carAngle -= self.turnAngle
             self.carX += self.carSpeed * math.cos(self.carAngle)
-            self.carY += self.carSpeed * math.sin(self.carAngle)
+            self.carY += -self.carSpeed * math.sin(self.carAngle)
             self.carRect.center = (int(self.carX), int(self.carY))
 
         if leftKey:
